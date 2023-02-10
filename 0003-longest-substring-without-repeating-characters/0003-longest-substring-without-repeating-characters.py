@@ -9,7 +9,6 @@ class Solution:
                 tmp.pop(0)
             tmp.append(s[i])
             i+=1
-            print(tmp)
         m.append(len(tmp))
         if s=="":
             return 0
