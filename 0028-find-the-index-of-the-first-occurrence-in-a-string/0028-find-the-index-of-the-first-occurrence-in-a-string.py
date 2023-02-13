@@ -5,6 +5,8 @@ class Solution:
             for j,n in enumerate(needle):
                 if n==haystack[i+j]:
                     a+=1
+                else:
+                    break
             if a == len(needle):
                 return i
         return -1
