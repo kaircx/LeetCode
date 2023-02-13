@@ -1,10 +1,10 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        ref=[]
+        ref={}
         for num in nums:
             if num in ref:
-                ref.pop(ref.index(num))
+                ref[num]+=1
             else:
-                ref.append(num)
-        return ref[0]
+                ref[num]=1
+        return list(ref.keys())[list(ref.values()).index(min(list(ref.values())))]
         
