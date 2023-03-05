@@ -4,6 +4,5 @@ class Solution:
             a=arr.pop(0)
             if a in [n*2 for n in arr] :
                 return True
-            print(a,arr)
             arr.append(a)
         return False
