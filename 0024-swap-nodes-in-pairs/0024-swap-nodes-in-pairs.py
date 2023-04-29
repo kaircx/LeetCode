@@ -11,19 +11,18 @@ class Solution:
         tmp = head
         archive=None
         while True:
-            before=tmp#3
-            after=tmp.next#
+            before=tmp
+            after=tmp.next
             if after!=None:
-                tmp=after.next#None
+                tmp=after.next
             else:
-                return begin
-            before.next=after.next#None
-            after.next=before#3
+                break
+            before.next=after.next
+            after.next=before
             if archive is not None:
                 archive.next=after
             if tmp!=None:
                 archive=before
-                pass  
             else:
                 break          
         return begin
