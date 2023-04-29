@@ -10,7 +10,7 @@ class Solution:
         begin = head.next
         tmp = head
         archive=None
-        while True:
+        while tmp!=None:
             before=tmp
             after=tmp.next
             if after!=None:
@@ -21,10 +21,7 @@ class Solution:
             after.next=before
             if archive is not None:
                 archive.next=after
-            if tmp!=None:
-                archive=before
-            else:
-                break          
+            archive=before         
         return begin
             
             
