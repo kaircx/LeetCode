@@ -4,8 +4,7 @@ class Solution:
         paper=[]
         t=numRows
         flag=False
-        if numRows==1:
-            return s
+
         for i in range(len(s)):
             paper.append(t)
             if t!=1 and flag==False:
@@ -13,7 +12,7 @@ class Solution:
             elif t<numRows:
                 t+=1
                 flag=True
-            elif t==numRows:
+            elif t==numRows and flag==True:
                 flag=False
                 t-=1
             else:
