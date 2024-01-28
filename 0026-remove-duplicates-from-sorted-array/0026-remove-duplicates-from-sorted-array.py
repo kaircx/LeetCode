@@ -5,10 +5,9 @@ class Solution:
         while True:
             if k==nums[i]:
                 k=nums.pop(i)
-                i-=1
             else:
                 k=nums[i]
-            i+=1
+                i+=1
             if i>len(nums)-1:
                 break
         return i
