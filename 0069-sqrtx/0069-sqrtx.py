@@ -2,9 +2,10 @@ class Solution:
     def mySqrt(self, x: int) -> int:
         i=1
         while True:
-            if round(x//i)==i:
+            c=round(x//i)
+            if c==i:
                 return i
-            elif round(x//i)==i-1:
+            elif c==i-1:
                 return i-1
             i+=1
             
